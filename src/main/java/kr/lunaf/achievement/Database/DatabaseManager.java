@@ -49,6 +49,9 @@ public class DatabaseManager {
     }
 
     public static Connection getConnection() {
+        if (connection == null) {
+            initializeDatabase();
+        }
         return connection;
     }
 }
