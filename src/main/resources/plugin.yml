@@ -3,13 +3,21 @@ version: '${project.version}'
 main: kr.lunaf.achievement.LunaAchievement
 api-version: 1.21
 commands:
-  reloadachievements:
-    description: 업적 리로드
-    usage: /reloadachievements
-    permission: achievementplugin.reloadachievements
-    permission-message: 권한 부족
+  achievements:
+    description: Achievement management commands
+    usage: /achievements <reload|list|player>
+    permission: achievementplugin.use
+    permission-message: 해당 명령어를 사용할 권한이 없습니다.
 permissions:
-  achievementplugin.reloadachievements:
-    description: 리로드 권한
+  achievementplugin.use:
+    description: Allows the player to use achievement commands
     default: op
-
+  achievementplugin.reload:
+    description: Allows the player to reload achievements
+    default: op
+  achievementplugin.list:
+    description: Allows the player to list achievements
+    default: op
+  achievementplugin.player:
+    description: Allows the player to view other player's achievements
+    default: op

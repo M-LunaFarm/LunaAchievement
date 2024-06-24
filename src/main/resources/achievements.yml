@@ -1,0 +1,15 @@
+apple-1:
+  type: apple
+  amount: 30
+  display: 사과 30개 먹기
+  icon:
+    type: APPLE
+    model: 10
+apple-2:
+  type: apple
+  amount: 50
+  display: 사과 50개 먹기
+apple-3:
+  type: apple
+  amount: 100
+  display: 사과 100개 먹기
