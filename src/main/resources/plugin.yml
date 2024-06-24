@@ -4,7 +4,7 @@ main: kr.lunaf.achievement.LunaAchievement
 api-version: 1.21
 commands:
   achievements:
-    description: Achievement management commands
+    description: 업적 관리 명령어 입니다.
     usage: /achievements <reload|list|player>
     permission: achievementplugin.use
     permission-message: 해당 명령어를 사용할 권한이 없습니다.
