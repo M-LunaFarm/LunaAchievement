@@ -11,7 +11,7 @@ public class DatabaseManager {
 
     public static void initializeDatabase() {
         try {
-            connection = DriverManager.getConnection("jdbc:sqlite:plugins/YourPlugin/achievements.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:plugins/LunaAchievement/achievements.db");
             Statement stmt = connection.createStatement();
             String createAchievementsTable = "CREATE TABLE IF NOT EXISTS player_achievements (" +
                     "id INTEGER PRIMARY KEY AUTOINCREMENT," +
